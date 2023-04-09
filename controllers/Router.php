@@ -2,15 +2,15 @@
 
 namespace controllers;
 
-//use controllers\AltoRouter;
+//use controllers\AutoRouter;
 
 class Router
 {
-    private AltoRouter $router;
+    private AutoRouter $router;
 
     public function __construct()
     {
-        $this->router = new AltoRouter();
+        $this->router = new AutoRouter();
     }
 
     public function addRoute(string $uri, string $handler, string $method = 'GET'): void
